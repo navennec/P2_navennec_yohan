@@ -27,6 +27,8 @@ body {
   }
   .header__nav__link[data-active=true] {
     color: #0065FC;
+    border-top: 3px #0065FC;
+
   }
   .header__nav__link:hover {
     color: #0065FC;
@@ -38,6 +40,8 @@ body {
     color: #0065FC;
     font-weight: 600;
   }
+
+
   .main {
     max-width: 1440px;
     margin: auto;
@@ -152,6 +156,7 @@ body {
   display: grid;
   column-gap: 2rem;
   grid-template-columns: 6fr 3fr;
+
 }
 .hosting__main {
   display: grid;
@@ -166,6 +171,7 @@ body {
 
 .hosting__main__header__title {
   display: block;
+  margin: 0;
 }
 
 .hosting__main__card {
@@ -175,11 +181,11 @@ body {
   box-shadow: 0 0 16px #0000002e;
   transition-duration: 0.1s;
   cursor: pointer;
-
 }
 .hosting__main__card:hover {
   transform: scale(1.02);
 }
+
 .hosting__main__card__figure__img {
   height: 7rem;
   object-fit: cover;
@@ -187,6 +193,7 @@ body {
   width: 100%;
   border-radius: 1rem 1rem 0 0;
 }
+
 .hosting__main__card__grade__icon[data-active=true] {
   color: #0065FC;
 }
@@ -198,18 +205,31 @@ body {
 }
 /*POPULAR*/
 
-.hosting__popular
+.hosting__popular {
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto 10rem;
+  column-gap: 2rem;
+  grid-row-start: 2;
+}
 
 .hosting__popular__wrapcontent {
   display: flex;
 }
 
 
+
+
+
+
+
 /*ACTIVITY*/
 
 .activity {
   display: grid;
-
+  column-gap: 2rem;
+  margin: 4rem 0;
+  
+  
 }
 
 .activity__card {
@@ -226,7 +246,30 @@ body {
   margin: 1.2rem 1.5rem;
 }
 
-
+.activity__card1 {
+  grid-row: 2/7;
+  grid-column: 1/2;
+}
+.activity__card2 {
+  grid-column: 2/3;
+  grid-row: 2/5;
+}
+.activity__card3 {
+  grid-column: 3/4;
+  grid-row: 2/7;
+}
+.activity__card4 {
+  grid-column: 4/5;
+  grid-row: 2/3;
+}
+.activity__card5 {
+  grid-column: 2/3;
+  grid-row: 6/7;
+}
+.activity__card6 {
+  grid-column: 4/5;
+  grid-row: 4/7;
+}
 
 
 /*FOOTER*/
