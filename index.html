@@ -17,7 +17,9 @@
     <title>P2 Reservia</title>
   </head>
   <body>
-    <!-- HEADER -->
+
+
+  <section class="search">
     <header class="header">
       <img class="header__img" src="./img/logo/Reservia.svg" alt="Reservia" />
       <nav class="header__nav">
@@ -27,15 +29,15 @@
         <a class="header__nav__link" href="#activity" data-active="false"
           >Activités</a
         >
+        <a class="header__signup" href="#">S'inscrire</a>
       </nav>
-      <a class="header__signup" href="#">S'inscrire</a>
-    </header>
-    <!-- HEADER -->
+      
+       </header> 
 
-    <!-- MAIN -->
     <main class="main">
-      <!-- SEARCH -->
-      <section class="search">
+
+
+
         <header class="search__header">
           <h1 class="search__header__title">
             Trouvez votre hébergement pour des vacances de rêve
@@ -107,7 +109,8 @@
           </p>
         </div>
       </section>
-      <!-- SEARCH -->
+
+
 
       <!-- HOSTING -->
       <section class="hosting" id="hosting">
@@ -119,6 +122,7 @@
           </header>
           <article class="hosting__main__card">
             <a href="#">
+              <figure class="hosting__main__card__figure">
                 <img
                   class="hosting__main__card__figure__img"
                   src="./img/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg"
@@ -127,6 +131,7 @@
                   <h3 class="hosting__main__card__figure__caption__title">
                     Auberge la Cannebière
                   </h3>
+                </figure>  
               <p class="hosting__main__card__desc">
                 Nuit à partir de
                25€
@@ -370,7 +375,7 @@
 
         <aside class="hosting__popular">
           <h2 class="hosting__popular__title">
-            Les plus populaire <i class="fas fa-chart-line"></i>
+            Les plus populaires <i class="fas fa-chart-line"></i>
           </h2>
           <article class="hosting__main__card hosting__popular__card">
             <a class="hosting__popular__wrapcontent" href="#">
@@ -509,7 +514,6 @@
           </article>
         </aside>
       </section>
-      <!-- HOSTING -->
 
       <!-- ACTIVITY -->
       <section class="activity" id="activity">
@@ -575,7 +579,6 @@
           <h3 class="activity__card__title">Parc Longchamp</h3>
         </a>
       </section>
-      <!-- ACTIVITY -->
     </main>
     <!-- MAIN -->
 

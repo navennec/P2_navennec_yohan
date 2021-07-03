@@ -164,7 +164,7 @@ body {
   display: grid;
   column-gap: 2rem;
   row-gap: 2rem;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, 1fr); 
 }
 
 .hosting__main__header {
@@ -172,7 +172,6 @@ body {
 }
 
 .hosting__main__header__title {
-  display: block;
   margin: 0;
 }
 
@@ -183,11 +182,16 @@ body {
   box-shadow: 0 0 16px #0000002e;
   transition-duration: 0.1s;
   cursor: pointer;
+  box-sizing: border-box;
+  height: 100%;
 }
 .hosting__main__card:hover {
   transform: scale(1.02);
 }
 
+.hosting__main__card__figure {
+  margin: 0;
+}
 .hosting__main__card__figure__img {
   height: 7rem;
   object-fit: cover;
