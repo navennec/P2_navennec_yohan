@@ -195,7 +195,6 @@ body {
 .hosting__main__card__figure__img {
   height: 7rem;
   object-fit: cover;
-  
   width: 100%;
   border-radius: 1rem 1rem 0 0;
 }
@@ -421,8 +420,12 @@ body {
   display: flex;
 }
 .footer__columnwrapper__column {
-  width: 30%;
-  padding: 2rem 2rem;
+  display: inline;
+  width: 40%;
+  padding:  2rem;
+}
+.footer__columnwrapper__column__title {
+  margin: 1rem 1rem;
 }
 .footer__columnwrapper__column__link {
   display: block;
