@@ -152,11 +152,12 @@ body {
   background-color: #F2F2F2;
   border-radius: 1.5rem;
   padding: 2rem;
+  margin: 2rem;
 }
 
 .hosting {
   display: grid;
-  column-gap: 2rem;
+  column-gap: 0rem;
   grid-template-columns: 6fr 3fr;
 
 }
@@ -207,96 +208,27 @@ body {
 }
 .hosting__main__viewmore {
   font-weight: bold;
+  padding-left: 5%;
 }
 /*POPULAR*/
-
-.hostingPopularWrapcontentContentWhitespace {
-  flex: 1;
-}
-
-.hosting__popular__card {
-    width: 10%;
-    height: 100%;
-    z-index: 1;
-}
-.hosting__popular__wrapcontent__wrapimg__img {
-    position: relative;
-    width: 43%;
-    overflow: hidden;
-    margin: 3px 0 3px 3px;
-    border-radius: 10px 0 0 10px;
-    flex: 3;
-}
-.soleil__matin {
-    width: 164px;
-    position: absolute;
-    left: -76%;
-    top: -4%;
-    background-size: cover;
-}
-.coeur__eau{
-    width: 142px;
-    position: absolute;
-    left: -57%;
-    top: -5%;
-    background-size: cover;
-}
-.bleu__blanc {
-    width: 105px;
-    position: absolute;
-    left: -20%;
-    top: -34%;
-    background-size: cover;
-}
-.hosting__popular__wrapcontent__content {
-    padding: 11px 0 0 13px;
-    flex: 5;
-}
-.hosting__main__card__grade__icon {
-    margin-top: 23px;
-}
-
-
-
-
-
-
-
-
-
-.fa-chart-line {
-  margin-left: 5rem;
-}
-
-.hosting__popular__card {
-
-
- 
-}
 
 .hosting__popular {
   display: grid;
   row-gap: 2rem;
-  align-items: flex-start;
+  align-items: start;
   grid-template-rows: auto repeat(3, 1fr);
-  
-  height: 90%;
-  width: 90%;
 }
-
-.hosting__main__card__figure__caption__title {
+.hosting__popular__title {
   margin: 0;
   display: flex;
   justify-content: space-between;
 }
-
 .hosting__popular__wrapcontent {
   display: flex;
   align-items: stretch;
   height: 100%;
   overflow: auto;
 }
-
 .hosting__popular__wrapcontent__wrapimg {
   position: relative;
   min-height: 100%;
@@ -304,7 +236,6 @@ body {
   min-width: 33%;
   max-width: 33%;
 }
-
 .hosting__popular__wrapcontent__wrapimg__img {
   border-radius: 1rem 0 0 1rem;
   position: absolute;
@@ -312,33 +243,69 @@ body {
   height: 100%;
   object-fit: cover;
 }
-
 .hosting__popular__wrapcontent__content {
-  display: flex;
-  flex-direction: column;
+  padding-left: 5%;
+}
+.hosting__popular__card {
+  height: 10rem;
+}
+.hosting__main__card__figure__caption__title {
+}
+.hostingPopularWrapcontentContentWhitespace {
+
 }
 
 .hosting__popular__card {
-  margin: 0;
-  padding: 0;
-  display: flex;
-  align-items: center;
-  width: 40%;
-  height: 9rem;
-  border-radius: 15px 0 0 15px;
+  
+}
+.hosting__popular__wrapcontent__wrapimg__img {
+    
 }
 
-.hosting__popular__wrapcontent__wrapimg__img {
-  width: 100%;
-  height: 100%;
-  max-height: 110px;
-  min-width: 170px;
-  border-radius: 20px 0 0 15px;
-  object-fit: cover;
+
+
+.fa-chart-line {
+
+}
+
+.hosting__popular__card {
+ 
+}
+
+.hosting__popular {
+
 }
 
 .hosting__main__card__figure__caption__title {
-  grid-column: 1/-1;
+ 
+}
+
+.hosting__popular__wrapcontent {
+ 
+}
+
+.hosting__popular__wrapcontent__wrapimg {
+ 
+}
+
+.hosting__popular__wrapcontent__wrapimg__img {
+  
+}
+
+.hosting__popular__wrapcontent__content {
+
+}
+ 
+.hosting__popular__card {
+
+}
+
+.hosting__popular__wrapcontent__wrapimg__img {
+ 
+}
+
+.hosting__main__card__figure__caption__title {
+
 }
 
 
@@ -348,6 +315,7 @@ body {
   display: grid;
   column-gap: 2rem;
   margin: 4rem 0;
+  height: 900px;
 }
 
 .activity__card {
@@ -357,18 +325,14 @@ body {
   display: flex;
   flex-direction: column;
   transition-duration: 0.1s;
-  
 }
-
 .activity__card:hover {
   transform: scale(1.01);
 }
-
 .activity__card__wrapimg {
   position: relative;
   flex: 1;
 }
-
 .activity__card__wrapimg__img {
   object-fit: cover;
   border-radius: 20px 0 0 0 ;
@@ -376,13 +340,10 @@ body {
   height: 100%;
   margin: 0;
 }
-
-
 .activity__card__title {
   grid-column: 1/-1;
   margin: 1.2rem 1.5rem;
 }
-
 .activity__card1 {
   grid-row: 2/7;
   grid-column: 1/2;
@@ -430,4 +391,24 @@ body {
 .footer__columnwrapper__column__link {
   display: block;
   margin: 1rem ;
+}
+
+/* Responsive */
+
+@media screen and (max-width: 1100px)  {
+  .main {
+    width: 100%;
+    background-color: #0065FC;
+  }
+  .body {
+    display: block;
+  }
+
+}
+
+@media screen and (max-width: 600px) {
+  .header {
+    background-color: blueviolet;
+  }
+ 
 }
