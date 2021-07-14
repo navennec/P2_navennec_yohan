@@ -956,6 +956,7 @@ footer a
 }
 .filters__buttons
 {
+  justify-content: flex-start;
   margin-right: 200px;
   margin-bottom: 20px;
 }
@@ -1137,7 +1138,7 @@ footer h5
 
 
 
-                                    /* Mise en forme de la partie recherche et filtres*/
+                              /* Mise en forme de la partie recherche et filtres*/
 .filters__buttons 
 {
   margin-right: 500px;
