@@ -1,0 +1,9 @@
+:root {
+  --spacing-xs: 1rem;
+  --spacing-base: 2rem;
+  --white-color: #ffffff;
+  --text-color: #101010;
+  --primary-color: #0065fc;
+  --secondary-color: #deebff;
+  --background-color: #f2f2f2;
+}

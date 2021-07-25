@@ -1,0 +1,47 @@
+footer {
+  display: flex;
+  background-color: var(--background-color);
+  margin-bottom: var(--spacing-base);
+  margin-top: var(--spacing-base);
+}
+
+footer h5 {
+  font-size: 0.8em;
+  font-weight: bold;
+  margin-bottom: calc(var(--spacing-base) * 0.5);
+  margin-top: var(--spacing-base);
+}
+
+footer ul {
+  margin-bottom: calc(var(--spacing-base) * 5);
+}
+
+footer li {
+  list-style: none;
+  font-size: 0.8em;
+  margin-bottom: calc(var(--spacing-base) * 0.3);
+}
+
+footer a:hover {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+footer a {
+  color: var(--text-color);
+  text-decoration: none;
+}
+
+.a-propos {
+  width: 35%;
+  margin-left: 2rem;
+}
+
+.nos-hebergements {
+  width: 30%;
+}
+
+.assistance {
+  width: 35%;
+  margin-left: 3rem;
+}

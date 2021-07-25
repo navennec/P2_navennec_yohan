@@ -1,20 +1,16 @@
-:root{
+:root {
   --spacing: 3rem;
-  --bgcolor: #f2f2f2 ;
-  --boutonColor:  #0065FC;
+  --bgcolor: #f2f2f2;
+  --boutonColor: #0065fc;
 }
-
 
 /* Application police maquette */
-body
-{
- font-family: 'Raleway', sans-serif;
- color: black;
-
+body {
+  font-family: "Raleway", sans-serif;
+  color: black;
 }
 
-.container
-{
+.container {
   max-width: 1400px;
   margin: auto;
 }
@@ -25,15 +21,12 @@ body
 }
 /* Application police maquette pour titres */
 
-h2
-{
+h2 {
   font-size: 1.2em;
   font-weight: bold;
   padding-top: 20px;
   padding-bottom: 20px;
 }
-
-
 
 /* mise en place des élements du header */
 /*.header
@@ -42,22 +35,19 @@ h2
   margin-top: 10px;   
 }*/
 
-#logo
-{
+#logo {
   margin-right: auto;
 }
 
 /* redimensionnement du logo */
 
-#logo img
-{
+#logo img {
   width: auto;
   height: 50px;
 }
 /* mise en place menu de navigation*/
 
-#navigation
-{
+#navigation {
   display: flex;
   padding-top: 15px;
   margin-right: 50px;
@@ -65,63 +55,50 @@ h2
   font-size: 1em;
 }
 
-#navigation a
-{
+#navigation a {
   text-decoration: none;
   color: black;
 }
 
-#nav__hosting
-{
+#nav__hosting {
   margin-right: 50px;
 }
 
-#header__signup
-{
-  padding: 15px 20px 0 0
-  
+#header__signup {
+  padding: 15px 20px 0 0;
 }
 
-#header__signup a
-{
+#header__signup a {
   text-decoration: none;
   color: var(--boutonColor);
   padding-top: 15px;
-   font-weight: bold;
+  font-weight: bold;
 }
-
 
 /* Effet de survol sur liens de navigation */
 
-#navigation a:hover
-{
-  color:var(--boutonColor);
+#navigation a:hover {
+  color: var(--boutonColor);
   padding-top: 10px;
   border-top: 3px solid var(--boutonColor);
 }
 
-
 /* Contenu principal */
 .search {
   padding-top: 20px;
-  
 }
 
 /* Ajustement taille titre et paragraphe avant recherche*/
 
-#header__text
-{
+#header__text {
   font-size: 0.8em;
   padding-bottom: 20px;
 }
 
-
 /* Mise en place de la recherche*/
 
-#search__form
-{
+#search__form {
   display: flex;
-  
 }
 
 .fa-map-marker-alt:before {
@@ -131,8 +108,7 @@ h2
   text-align: center;
 }
 
-.fa-map-marker-alt
-{ 
+.fa-map-marker-alt {
   border-radius: 13px 0px 0px 13px;
   font-size: 17px;
   background-color: var(--bgcolor);
@@ -142,11 +118,9 @@ h2
   justify-content: center;
   align-items: center;
   padding-bottom: 4px;
-  
 }
 
-.city
-{
+.city {
   height: 50px;
   width: 210px;
   border: #f2f2f2 solid 2px;
@@ -155,8 +129,7 @@ h2
   color: black;
 }
 
-.city input
-{
+.city input {
   text-decoration: none;
   border: none;
   height: 50px;
@@ -164,11 +137,10 @@ h2
   font-weight: bold;
   color: black;
   width: 100%;
-  padding-left: 20px ;
+  padding-left: 20px;
 }
 
-.submit
-{
+.submit {
   display: flex;
   width: 130px;
   height: 53px;
@@ -181,26 +153,22 @@ h2
   justify-content: center;
   align-items: center;
   text-decoration: none;
-  }
+}
 
-.submit a
-{
+.submit a {
   text-decoration: none;
   background-color: var(--boutonColor);
   color: white;
 }
 
-
 /* bouton rechercher pour iphone caché*/
-#search_iphone
-{
+#search__iphone {
   display: none;
 }
 
 /* Mise de la partie filtres*/
 
-.filters
-{
+.filters {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -209,25 +177,21 @@ h2
   font-weight: bold;
   font-size: 1em;
   align-items: center;
-      
 }
 
-.filters__buttons
-{
+.filters__buttons {
   font-size: 1.1em;
   margin-right: 20px;
 }
 
-.buttons
-{
+.buttons {
   display: flex;
   flex-wrap: wrap;
 }
 
 /* Mise en forme commune à tous les filtres*/
 
-.filters button
-{
+.filters button {
   display: flex;
   background-color: white;
   font-weight: bold;
@@ -243,12 +207,11 @@ h2
 
 /* Mise en forme des incones des filtres*/
 
-.icons
-{
+.icons {
   display: flex;
   width: 50px;
   height: 50px;
-  background-color: #DEEBFF;
+  background-color: #deebff;
   color: var(--boutonColor);
   border-radius: 50px;
   align-items: center;
@@ -256,26 +219,22 @@ h2
   margin-right: 15px;
 }
 
-
 /* Effet de survol des boutons filtres*/
 
-button:hover
-{
+button:hover {
   color: var(--boutonColor);
-  background-color: #DEEBFF;
+  background-color: #deebff;
 }
 
 /* Mise en forme de la ligne information*/
-#info
-{
+#info {
   display: flex;
   margin-top: 20px;
   margin-bottom: 20px;
   font-size: 0.8em;
 }
 
-.fa-info
-{
+.fa-info {
   display: flex;
   width: 15px;
   height: 15px;
@@ -291,23 +250,20 @@ button:hover
 }
 
 /* Mise en page de la section hébergements*/
-.hosting__marseille
-{
+.hosting__marseille {
   display: grid;
   grid-template-columns: 30fr 15fr;
   grid-template-rows: 1fr;
   grid-column-gap: 50px;
 }
-.fa-star
-{
+.fa-star {
   font-size: 0.8em;
 }
 
 /* Mise en forme de la partie hébergement gauche*/
 
 /* Mise en place du container gauche */
-.left
-{
+.left {
   background-color: var(--bgcolor);
   border-radius: 20px;
   display: grid;
@@ -320,17 +276,14 @@ button:hover
   grid-row-gap: 30px;
 }
 
-.left h2
-{
+.left h2 {
   grid-column-start: 1;
   grid-column-end: 4;
-
 }
 
 /* Insertion des images et mise en forme*/
 
-.photo__hotel__cannebiere
-{
+.photo__hotel__cannebiere {
   background-image: url(./img/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg);
   background-size: cover;
   border-radius: 20px 20px 0px 0px;
@@ -338,9 +291,7 @@ button:hover
   height: 110px;
 }
 
-
-.photo__hotel__port
-{
+.photo__hotel__port {
   background-image: url(./img/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg);
   background-size: cover;
   border-radius: 20px 20px 0px 0px;
@@ -348,10 +299,7 @@ button:hover
   height: 110px;
 }
 
-
-
-.photo__hotel__mouettes
-{
+.photo__hotel__mouettes {
   background-image: url(./img/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg);
   background-size: cover;
   border-radius: 20px 20px 0px 0px;
@@ -359,10 +307,7 @@ button:hover
   height: 110px;
 }
 
-
-
-.photo__hotel__mer
-{
+.photo__hotel__mer {
   background-image: url(./img/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg);
   background-size: cover;
   border-radius: 20px 20px 0px 0px;
@@ -370,11 +315,7 @@ button:hover
   height: 110px;
 }
 
-
-
-
-.photo__hotel__panier
-{
+.photo__hotel__panier {
   background-image: url(./img/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg);
   background-size: cover;
   border-radius: 20px 20px 0px 0px;
@@ -382,10 +323,7 @@ button:hover
   height: 110px;
 }
 
-
-
-.photo__hotel__amina
-{
+.photo__hotel__amina {
   background-image: url(./img/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg);
   background-size: cover;
   border-radius: 20px 20px 0px 0px;
@@ -393,78 +331,63 @@ button:hover
   height: 110px;
 }
 
-
 /* Cadre de toutes les images et descriptions */
 
-.hosting__main__card
-{
+.hosting__main__card {
   border: white solid 5px;
   background-color: white;
   border-radius: 20px;
   display: grid;
   grid-template-rows: 2fr;
   box-shadow: 3px 5px 5px #e2e2e2;
-  
 }
 
 /* Description cliquable et enlèvement du soulignement */
 
-.hosting__main__card a:hover
-{
+.hosting__main__card a:hover {
   color: var(--boutonColor);
   text-decoration: none;
 }
 
-.hosting__main__card a
-{
-  color: black ;
+.hosting__main__card a {
+  color: black;
   text-decoration: none;
 }
 /* Ajustement description sous photo */
 
-.descrip
-{
-  
+.descrip {
   padding: 5px 0 5px 15px;
- 
 }
 
 /* Ajustement titre des photos*/
-h3
-{
+h3 {
   margin: 0px;
   font-size: 0.9em;
-  
 }
 
 /* Ajustement ligne tarif nuit*/
 
-h3 + p
-{
+h3 + p {
   font-size: 0.8em;
   margin: 5px 0 5px 0;
 }
 
 /* Fond bleu des étoiles */
-.blue
-{
+.blue {
   color: var(--boutonColor);
 }
 
 /* Fond gris des étoiles */
 
-.grey
-{
+.grey {
   color: var(--bgcolor);
 }
 
 /* Ajustement des photos*/
 
-
 /* Mise en place du bouton afficher plus avec effet de survol*/
 
-#viewmore
-{
+#viewmore {
   border: none;
   font-weight: bold;
   font-size: 1em;
@@ -472,30 +395,23 @@ h3 + p
   padding: 20px 0 0 10px;
 }
 
-#viewmore a
-{
+#viewmore a {
   text-decoration: none;
-  color: black ; 
+  color: black;
 }
 
-#viewmore :hover
-{
+#viewmore :hover {
   text-decoration: none;
   color: var(--boutonColor);
 }
 
-
 /* Fin de la mise en forme de la partie hébergement left*/
-
 
 /* Mise en forme de la partie hébergement droite*/
 
-
-
 /* Mise en place du container droit */
 
-.hosting__popular
-{
+.hosting__popular {
   background-color: var(--bgcolor);
   border-radius: 20px;
   display: grid;
@@ -507,39 +423,33 @@ h3 + p
 }
 /* Description cliquable et enlèvement du soulignement */
 
-.hosting__popular a:hover
-{
+.hosting__popular a:hover {
   color: var(--boutonColor);
   text-decoration: none;
 }
 
-.hosting__popular a
-{
-  color: black ;
+.hosting__popular a {
+  color: black;
   text-decoration: none;
 }
 
 /* Mise en place du titre et de l'icone*/
-.hosting__popular__title
-{
+.hosting__popular__title {
   display: flex;
   justify-content: space-between;
 }
 
-.hosting__popular__title div
-{
+.hosting__popular__title div {
   font-size: 20px;
-  padding-top: 38px
+  padding-top: 38px;
 }
-.popular__price p
-{
+.popular__price p {
   font-size: 0.8em;
 }
 
 /* Ajustement des photos*/
 
-.hosting__popular__card__text
-{
+.hosting__popular__card__text {
   display: grid;
   grid-template-columns: 135px 1fr;
   grid-column-gap: 10px;
@@ -547,8 +457,7 @@ h3 + p
 
 /* Insertion des images et mise en forme*/
 
-.photo__hotel__soleil
-{
+.photo__hotel__soleil {
   background-image: url(./img/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg);
   background-size: cover;
   border-radius: 20px 0px 0px 20px;
@@ -557,8 +466,7 @@ h3 + p
   width: 135px;
 }
 
-.photo__chambres__hotes
-{
+.photo__chambres__hotes {
   background-image: url(./img/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg);
   background-size: cover;
   border-radius: 20px 0px 0px 20px;
@@ -567,8 +475,7 @@ h3 + p
   width: 135px;
 }
 
-.photo__bleu__blanc
-{
+.photo__bleu__blanc {
   background-image: url(./img/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg);
   background-size: cover;
   border-radius: 20px 0px 0px 20px;
@@ -579,41 +486,33 @@ h3 + p
 
 /* Mise en forme de chaque photo et description*/
 
-.hosting__popular__card
-{
+.hosting__popular__card {
   background-color: #fff;
   border-radius: 20px;
   border: 5px solid white;
   box-shadow: 3px 5px 5px #e2e2e2;
-    
 }
 
 /* Ajustement description*/
-.descripd
-{
- display: flex;
- flex-direction: column;
-} 
+.descripd {
+  display: flex;
+  flex-direction: column;
+}
 
-.popular__price p
-{
+.popular__price p {
   font-size: 0.8em;
 }
 
-.evaluation
-{
+.evaluation {
   padding-top: 35px;
 }
 
 /* Fin de la mise en forme de la partie hébergement droite*/
 
-
 /* Mise en forme de la partie activités*/
 
-
 /* Disposition en grille */
-.activity
-{
+.activity {
   display: grid;
   border-radius: 20px;
   grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -624,15 +523,12 @@ h3 + p
 
 /* Ajustements des titres*/
 
-.activity h2
-
-{
+.activity h2 {
   grid-column: 1 / span 4;
   padding: 0;
 }
 
-h4
-{
+h4 {
   font-size: 0.9em;
   font-weight: bold;
   margin: 11px 0px 11px 20px;
@@ -640,30 +536,24 @@ h4
 
 /* Effets de survol*/
 
-.activity a:hover
-{
+.activity a:hover {
   text-decoration: none;
   color: var(--boutonColor);
 }
-.activity a
-{
+.activity a {
   text-decoration: none;
-  color: black ;
+  color: black;
 }
 
-
 /* Mise place et en forme des photos sur la grille*/
-.port
-{
+.port {
   grid-column-start: 1;
   grid-row-start: 2;
   grid-row-end: 4;
   border-radius: 20px;
 }
 
-.photo__port
-
-{
+.photo__port {
   background-image: url(./img/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg);
   background-size: cover;
   border-radius: 20px 20px 0px 0px;
@@ -672,23 +562,20 @@ h4
   height: 390px;
 }
 
-.photo__title
-{
+.photo__title {
   display: grid;
   border-radius: 20px;
   box-shadow: 3px 5px 5px #e2e2e2;
 }
 
-.pomegues
-{
+.pomegues {
   grid-column-start: 2;
   grid-row-start: 2;
   grid-row-end: 3;
   border-radius: 20px;
 }
 
-.photo__pomegues
-{
+.photo__pomegues {
   background-image: url(./img/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg);
   background-size: cover;
   border-radius: 20px 20px 0px 0px;
@@ -696,8 +583,7 @@ h4
   height: 190px;
 }
 
-.frioul
-{
+.frioul {
   grid-column-start: 2;
   grid-row-start: 3;
   grid-row-end: 4;
@@ -705,8 +591,7 @@ h4
   padding-top: 45px;
 }
 
-.photo__frioul
-{
+.photo__frioul {
   background-image: url(./img/activites/3_medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg);
   background-size: cover;
   border-radius: 20px 20px 0px 0px;
@@ -715,16 +600,14 @@ h4
   height: 110px;
 }
 
-.calanques
-{
+.calanques {
   grid-column-start: 3;
   grid-row-start: 2;
   grid-row-end: 4;
   border-radius: 20px;
 }
 
-.photo__calanques
-{
+.photo__calanques {
   background-image: url(./img/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg);
   background-size: cover;
   border-radius: 20px 20px 0px 0px;
@@ -732,598 +615,485 @@ h4
   height: 390px;
 }
 
-.ndgarde
-{
- grid-column-start: 4;
+.ndgarde {
+  grid-column-start: 4;
   grid-row-start: 2;
   grid-row-end: 3;
-  border-radius: 20px; 
+  border-radius: 20px;
 }
 
-.photo__garde
-{
+.photo__garde {
   background-image: url(./img/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg);
   background-size: cover;
   border-radius: 20px 20px 0px 0px;
   height: 150px;
 }
 
-
-.longchamp
-{
- grid-column-start: 4;
+.longchamp {
+  grid-column-start: 4;
   grid-row-start: 3;
   grid-row-end: 4;
   border-radius: 20px;
 }
 
-.photo__longchamp
-{
+.photo__longchamp {
   background-image: url(./img/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg);
   background-size: cover;
   border-radius: 20px 20px 0px 0px;
   height: 155px;
 }
 
-
-
-
 /* Fin de la mise en forme de la partie activités*/
 
 /* Mise en forme du pied de page*/
 
-footer
-{
+footer {
   display: flex;
   background-color: var(--bgcolor);
   margin-bottom: 30px;
   margin-top: 50px;
-  
 }
 
-footer h5
-{
+footer h5 {
   font-size: 0.9em;
   font-weight: bold;
 }
 
-footer ul
-{
+footer ul {
   padding-left: 0px;
 }
 
-footer li
-{
+footer li {
   list-style: none;
   font-size: 0.8em;
 }
 
-
-footer a:hover
-{
+footer a:hover {
   color: var(--boutonColor);
   text-decoration: none;
 }
 
-footer a
-{
-  color: black ;
+footer a {
+  color: black;
   text-decoration: none;
 }
 
-#a__propos
-{
+#a__propos {
   width: 35%;
   margin-left: 50px;
 }
 
-#nos__hebergements
-{
+#nos__hebergements {
   width: 30%;
 }
 
-#assistance
-{
+#assistance {
   width: 35%;
 }
 
-
 /* Média queries affichage téléphone*/
 
-@media screen and (max-width: 767px)
-
-{
-
-
-/* Adaptation de la page à la résolution*/
-.container
-{
-  max-width: 767px;
-  margin-left: 20px;
-  width: auto;
-  
-}
-
-
-/* Mise en forme du header*/
-.header
-{
-  display: grid;
-  grid-template-rows: 1fr 1fr;
-  grid-template-columns: 1fr 1fr
-}
-
-#logo
-{
-  grid-column-start: 1;
-  grid-column-end: 2;
-  grid-row-start: 1;
-  grid-row-end: 2
-}
-
-#navigation
-{
-  grid-column-gap: 0;
-  grid-template-columns: 1fr 1fr;
-  grid-column: 1 / span2;
-  border-bottom: #deebff solid 2px;
-  margin-right: -20px;
-  margin-left: -20px;
-  font-size: 1em;
-}
-#Hébergements
-{
-  margin: 0;
-}
-
-#navigation div 
-{
-  width: 100%;
-  height: 100%;
-  margin-top: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-#navigation div a:hover
-{
-  border-style : none;
-}
-
-#navigation div:hover
-{
-  color:#0065FC;
-  border-bottom: 3px solid var(--boutonColor);
-}
-
-#inscription
-{
-  grid-column-start: 2;
-  grid-column-end: 3;
-  grid-row-start: 1;
-  grid-row-end: 2;
-  padding-left: 100px;
-}
-
-
-
-/* Mise en forme des filtres*/
-
-/* rechercher desktop caché et remplacé par version iphone */
-#search
-{
-  display: none;
-}
-
-#search_iphone
-{
-  display: flex;
-}
-
-.fa-map-marker-alt
-{ 
-  padding: 6px;
-  height: 41px;
-  width: 40px;
-}
-
-.submit
-{
-  padding: 6px;
-  border-radius: 15px;
-  height: 40px;
-  width: 40px;
-  margin-left: -10px;
+@media screen and (max-width: 767px) {
+  /* Adaptation de la page à la résolution*/
+  .container {
+    max-width: 767px;
+    margin-left: 20px;
+    width: auto;
   }
 
+  /* Mise en forme du header*/
+  .header {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+  }
 
-/* Mise en forme du titre*/
-#ajust
-{
-  padding-right: 48px;
-  padding-top: 5px;
+  #logo {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+
+  #navigation {
+    grid-column-gap: 0;
+    grid-template-columns: 1fr 1fr;
+    grid-column: 1 / span2;
+    border-bottom: #deebff solid 2px;
+    margin-right: -20px;
+    margin-left: -20px;
+    font-size: 1em;
+  }
+  #Hébergements {
+    margin: 0;
+  }
+
+  #navigation div {
+    width: 100%;
+    height: 100%;
+    margin-top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #navigation div a:hover {
+    border-style: none;
+  }
+
+  #navigation div:hover {
+    color: #0065fc;
+    border-bottom: 3px solid var(--boutonColor);
+  }
+
+  #inscription {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    padding-left: 100px;
+  }
+
+  /* Mise en forme des filtres*/
+
+  /* rechercher desktop caché et remplacé par version iphone */
+  #search {
+    display: none;
+  }
+
+  #search__iphone {
+    display: flex;
+  }
+
+  .fa-map-marker-alt {
+    padding: 6px;
+    height: 41px;
+    width: 40px;
+  }
+
+  .submit {
+    padding: 6px;
+    border-radius: 15px;
+    height: 40px;
+    width: 40px;
+    margin-left: -10px;
+  }
+
+  /* Mise en forme du titre*/
+  #ajust {
+    padding-right: 48px;
+    padding-top: 5px;
+  }
+
+  /* Ajustement des filtres*/
+
+  .filters {
+    margin-right: 10px;
+  }
+  .filters__buttons {
+    justify-content: flex-start;
+    margin-right: 200px;
+    margin-bottom: 20px;
+  }
+
+  .filters button {
+    padding-right: 5px;
+    margin-right: 15px;
+    margin-bottom: 15px;
+    font-size: 0.9em;
+  }
+  .icons {
+    margin-right: 5px;
+  }
+
+  /* Ajustement partie information avec texte*/
+
+  #info {
+    margin-top: 0px;
+  }
+  #info p {
+    padding-right: 40px;
+  }
+
+  /* Mise en forme de la partie hébergement*/
+
+  .hosting__marseille {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .hosting__popular {
+    flex-direction: column;
+    border-radius: 0;
+    padding-left: 15px;
+  }
+
+  .left {
+    display: flex;
+    flex-direction: column;
+    order: 2;
+    background-color: white;
+    padding: 0px;
+    padding-right: 20px;
+    grid-row-gap: 20px;
+  }
+
+  .left h2 {
+    margin-top: 40px;
+    margin-bottom: 0px;
+    padding: 0px;
+  }
+  .hosting__popular__card__text {
+    display: flex;
+  }
+
+  .hosting__main__card {
+    border: none;
+  }
+
+  /* Mise en forme de la partie activité*/
+
+  .activity {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .photo__port,
+  .photo__pomegues,
+  .photo__frioul,
+  .photo__calanques,
+  .photo__ndgarde,
+  .photo__longchamp {
+    height: 150px;
+  }
+
+  .port,
+  .pomegues,
+  .frioul,
+  .calanques,
+  .ndgarde,
+  .longchamp {
+    padding: 0 30px 20px 0;
+  }
+
+  .photo_port {
+    background-image: url(./images/vieux_port.jpg);
+    background-size: cover;
+    border-radius: 20px 20px 0px 0px;
+    background-position-x: center;
+    background-position-y: 0%;
+  }
+  .photo_frioul {
+    background-image: url(./images/iles_frioul.jpg);
+    background-size: cover;
+    border-radius: 20px 20px 0px 0px;
+    background-position-x: center;
+    background-position-y: 0%;
+  }
+
+  .photo_calanques {
+    background-image: url(./images/parc_calanques.jpg);
+    background-size: cover;
+    border-radius: 20px 20px 0px 0px;
+    background-position: inherit;
+  }
+
+  /* Fin de mise en forme de la partie activité*/
+
+  /* Mise en forme du footer*/
+  footer {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #a__propos {
+    width: auto;
+    margin-left: 20px;
+  }
+
+  #nos__hebergements {
+    width: auto;
+    margin-left: 20px;
+  }
+
+  #assistance {
+    width: auto;
+    margin-left: 20px;
+  }
+  footer ul li {
+    margin-bottom: 10px;
+  }
+
+  footer h5 {
+    margin-bottom: 10px;
+  }
 }
 
-
-/* Ajustement des filtres*/
-
-
-.filters
-
-{
-  margin-right: 10px;
-}
-.filters__buttons
-{
-  justify-content: flex-start;
-  margin-right: 200px;
-  margin-bottom: 20px;
-}
-
-.filters button
-{
-  padding-right: 5px;
-  margin-right: 15px;
-  margin-bottom: 15px;
-  font-size: 0.9em;
-}
-.icons
-{
-  margin-right: 5px;
-}
-
-/* Ajustement partie information avec texte*/
-
-#info
-{
-  margin-top: 0px;
-}
-#info p
-{
-  padding-right: 40px;
-}
-
-
-/* Mise en forme de la partie hébergement*/
-
-.hosting__marseille
-{
-  display: flex;
-  flex-direction: column;
-}
-
-
-.hosting__popular
-
-{
- flex-direction: column;
- border-radius: 0;
- padding-left: 15px;
- 
-}
-
-.left
-{
-  display: flex;
-  flex-direction: column;
-  order: 2;
-  background-color: white;
-  padding: 0px;
-  padding-right: 20px;
-  grid-row-gap: 20px;
-}
-
-.left h2
-
-{
-  margin-top: 40px;
-  margin-bottom: 0px;
-  padding: 0px;
-}
-.hosting__popular__card__text
-{
-  display: flex;
-}
-
-.hosting__main__card
-{
-  border: none;
-}
-
-
-
-/* Mise en forme de la partie activité*/
-
-.activity
-{
-  display: flex ;  
-  flex-direction: column;
-}
-
-.photo__port,
-.photo__pomegues,
-.photo__frioul,
-.photo__calanques,
-.photo__ndgarde,
-.photo__longchamp
-{
-  height: 150px;
-}
-
-.port,
-.pomegues,
-.frioul,
-.calanques,
-.ndgarde,
-.longchamp
-{
-  padding: 0 30px 20px 0;
-}
-
-.photo_port 
-{
-  background-image: url(./images/vieux_port.jpg);
-  background-size: cover;
-  border-radius: 20px 20px 0px 0px;
-  background-position-x: center;
-  background-position-y: 0%;
-}
-.photo_frioul {
-  background-image: url(./images/iles_frioul.jpg);
-  background-size: cover;
-  border-radius: 20px 20px 0px 0px;
-  background-position-x: center;
-  background-position-y: 0%;
-}
-
-.photo_calanques {
-  background-image: url(./images/parc_calanques.jpg);
-  background-size: cover;
-  border-radius: 20px 20px 0px 0px;
-  background-position: inherit;
-}
-
-/* Fin de mise en forme de la partie activité*/
-
-
-/* Mise en forme du footer*/
-footer
-{
-  display: flex;
-  flex-direction: column;
-  
-}
-
-#a__propos {
-  width: auto;
-  margin-left: 20px;
-}
-
-#nos__hebergements {
-  width: auto;
-  margin-left: 20px;
-}
-
-#assistance {
-  width: auto;
-  margin-left: 20px;
-}
-footer ul li
-{
-  margin-bottom: 10px;
-}
-
-footer h5
-
-{
-  margin-bottom: 10px;
-}
-
-}
-
-                                                        /* Média queries affichage tablette*/
-
-
-
-@media (min-width: 768px) and (max-width: 1024px)
-{
-/* Adaptation de la page à la résolution*/
-.container
-{
-  max-width: 1024px;
-  width: auto;
-  margin: 0 50px 0 50px;
-}
-
-
-
-                              /* Mise en forme de la partie recherche et filtres*/
-.filters__buttons 
-{
-  margin-right: 500px;
-  margin-bottom: 20px;
-}
-
-.filters button 
-{
-  margin-bottom: 15px;
-}
-
-
-
-                                  /* Mise en forme de la partie hébergement*/
-
-.hosting__marseille
-{
-  display: flex;
-  flex-direction: column;
-}
-
-
-.hosting__popular
-{
- flex-direction: column;
- border-radius: 20px;
- padding-left: 15px;
- 
-}
-
-.left
-{
-  order: 2;
-  background-color: white;
-  padding: 0px;
-  padding-right: 20px;
-  grid-row-gap: 20px;
-}
-
-.left h2
-{
-  margin-top: 40px;
-  margin-bottom: 0px;
-  padding: 0px;
-}
-.hosting__popular__card__text
-{
-  display: flex;
-}
-
-.hosting__main__card
-{
-  border: none;
-}
-
-
-
-                                /* Mise en forme de la partie activités*/
-
-
-/* Disposition en grille */
-
-.activity
-{
-  display: grid;
-  border-radius: 20px;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 70px 1fr 1fr 1fr;
-  grid-column-gap: 45px;
-  padding-top: 40px;
-}
-
-/* Ajustements des titres*/
-
-.activity h2
-
-{
-  grid-column: 1 / span 2;
-  padding: 0;
-}
-
-/* Mise en place et en forme des photos sur la grille*/
-.port
-{
-  grid-column: 1;
-  grid-row: 2;
-  border-radius: 20px;
-}
-
-.photo__port
-{
-  background-image: url(./img/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg);
-  background-size: cover;
-  border-radius: 20px 20px 0px 0px;
-  background-position-x: center;
-  background-position-y: center;
-  height: 200px;
-}
-
-.photo__title
-{
-  display: grid;
-  border-radius: 20px;
-  box-shadow: 3px 5px 5px #e2e2e2;
-  margin-bottom: 30px;
-}
-
-.pomegues
-{
-  grid-column: 2;
-  grid-row: 2;
-  border-radius: 20px;
-}
-
-.photo__pomegues
-{
-  background-image: url(./img/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg);
-  background-size: cover;
-  background-position: center;
-  border-radius: 20px 20px 0px 0px;
-  height: 200px;
-}
-
-.frioul
-{
-  grid-column: 1;
-  grid-row: 3;
-  border-radius: 20px;
-  padding-top: 0px;
-}
-
-.photo__frioul
-{
-  background-image: url(./img/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg);
-  background-size: cover;
-  border-radius: 20px 20px 0px 0px;
-  background-position: center;
-  height: 200px;
-}
-
-.calanques
-{
-  grid-column: 2;
-  grid-row: 3;
-  border-radius: 20px;
-}
-
-.photo__calanques
-{
-  background-image: url(./img/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg);
-  background-size: cover;
-  border-radius: 20px 20px 0px 0px;
-  background-position: center;
-  height: 200px;
-}
-
-.ndgarde
-{
-  grid-column: 1;
-  grid-row: 4;
-  border-radius: 20px; 
-}
-
-.photo__garde
-{
-  background-image: url(./img/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg);
-  background-size: cover;
-  background-position: center;
-  border-radius: 20px 20px 0px 0px;
-  height: 200px;
-}
-
-.longchamp
-{
-  grid-column: 2;
-  grid-row: 4;
-  border-radius: 20px;
-}
-
-.photo__longchamp
-{
-  background-image: url(./img/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg);
-  background-size: cover;
-  background-position: center;
-  border-radius: 20px 20px 0px 0px;
-  height: 200px;
-}
+/* Média queries affichage tablette*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  /* Adaptation de la page à la résolution*/
+  .container {
+    max-width: 1024px;
+    width: auto;
+    margin: 0 50px 0 50px;
+  }
+
+  /* Mise en forme de la partie recherche et filtres*/
+  .filters__buttons {
+    margin-right: 500px;
+    margin-bottom: 20px;
+  }
+
+  .filters button {
+    margin-bottom: 15px;
+  }
+
+  /* Mise en forme de la partie hébergement*/
+
+  .hosting__marseille {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .hosting__popular {
+    flex-direction: column;
+    border-radius: 20px;
+    padding-left: 15px;
+  }
+
+  .left {
+    order: 2;
+    background-color: white;
+    padding: 0px;
+    padding-right: 20px;
+    grid-row-gap: 20px;
+  }
+
+  .left h2 {
+    margin-top: 40px;
+    margin-bottom: 0px;
+    padding: 0px;
+  }
+  .hosting__popular__card__text {
+    display: flex;
+  }
+
+  .hosting__main__card {
+    border: none;
+  }
+
+  /* Mise en forme de la partie activités*/
+
+  /* Disposition en grille */
+
+  .activity {
+    display: grid;
+    border-radius: 20px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 70px 1fr 1fr 1fr;
+    grid-column-gap: 45px;
+    padding-top: 40px;
+  }
+
+  /* Ajustements des titres*/
+
+  .activity h2 {
+    grid-column: 1 / span 2;
+    padding: 0;
+  }
+
+  /* Mise en place et en forme des photos sur la grille*/
+  .port {
+    grid-column: 1;
+    grid-row: 2;
+    border-radius: 20px;
+  }
+
+  .photo__port {
+    background-image: url(./img/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg);
+    background-size: cover;
+    border-radius: 20px 20px 0px 0px;
+    background-position-x: center;
+    background-position-y: center;
+    height: 200px;
+  }
+
+  .photo__title {
+    display: grid;
+    border-radius: 20px;
+    box-shadow: 3px 5px 5px #e2e2e2;
+    margin-bottom: 30px;
+  }
+
+  .pomegues {
+    grid-column: 2;
+    grid-row: 2;
+    border-radius: 20px;
+  }
+
+  .photo__pomegues {
+    background-image: url(./img/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px 20px 0px 0px;
+    height: 200px;
+  }
+
+  .frioul {
+    grid-column: 1;
+    grid-row: 3;
+    border-radius: 20px;
+    padding-top: 0px;
+  }
+
+  .photo__frioul {
+    background-image: url(./img/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg);
+    background-size: cover;
+    border-radius: 20px 20px 0px 0px;
+    background-position: center;
+    height: 200px;
+  }
+
+  .calanques {
+    grid-column: 2;
+    grid-row: 3;
+    border-radius: 20px;
+  }
+
+  .photo__calanques {
+    background-image: url(./img/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg);
+    background-size: cover;
+    border-radius: 20px 20px 0px 0px;
+    background-position: center;
+    height: 200px;
+  }
+
+  .ndgarde {
+    grid-column: 1;
+    grid-row: 4;
+    border-radius: 20px;
+  }
+
+  .photo__garde {
+    background-image: url(./img/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px 20px 0px 0px;
+    height: 200px;
+  }
+
+  .longchamp {
+    grid-column: 2;
+    grid-row: 4;
+    border-radius: 20px;
+  }
+
+  .photo__longchamp {
+    background-image: url(./img/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px 20px 0px 0px;
+    height: 200px;
+  }
 }
