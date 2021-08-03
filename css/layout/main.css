@@ -1,360 +1,184 @@
-/* Mise en page de la section hébergements*/
-.hosting_marseille {
-  display: grid;
-  grid-template-columns: 35fr 15fr;
-  grid-template-rows: 1fr;
-  grid-column-gap: calc(var(--spacing-base) * 3);
-}
-.fa-star {
-  font-size: 0.8em;
-}
-/*:root {
-  --margin: 3rem;
-}
-
-.outter-container {
-  margin: var(--margin);
-  width: calc(100vw - var(--margin) * 2);
-  height: calc(100vh - var(--margin) * 2);  
-}
-
-.container {
-  width: 100%;
-  height: 100%;
-  background-color: pink;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  grid-gap: 2rem;
-  border:3px solid;
-}
-.container :nth-child(1n) {
-  background-color: aliceblue;
-  border-radius: 20px
-}
-.container :nth-child(2n) {
-  background-color: cornsilk;
-}
-.container-card {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 3rem;
-}
-
-
-
-.container :nth-child(1) {
-  grid-column: 1 / 3;
-  grid-row: 1 / 2;
-}
-
-  1 2 3
-1 K K
-2 
-
-.container :nth-child(2) {
-  grid-column: 2 / 3;
-  grid-row: 1 / 4;
-}
-
-.container :nth-child(3) {
-  grid-column: 2 / 3;
-  grid-row: 4 / 7;
-}
-.container :nth-child(4) {
-  grid-column: 3 / 4;
-  grid-row: 1 / 7;
-}
-.container :nth-child(5) {
-  grid-column: 4 / 5;
-  grid-row: 1/3;
-}
-
-.container :nth-child(6) {
-  grid-column: 4 / 5;
-  grid-row: 3 / 7;
-}
-
-*/
-
-/* Mise en forme de la partie hébergement gauche*/
-
-/* Mise en place du container gauche */
-/*.left {
-  background-color: var(--background-color);
-  border-radius: 20px;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 5px 1fr 1fr 50px;
-  padding-left: 40px;
-  padding-right: 40px;
-  padding-bottom: 40px;
-  grid-column-gap: 30px;
-  grid-row-gap: 30px;
+main {
   margin: var(--spacing-base);
-}*/
-.left {
+  display: grid;
+  grid-template-areas:
+    "hebergements popular"
+    "activities activities";
+  grid-gap: 2rem;
+}
+
+.hebergements {
+  grid-area: hebergements;
   background-color: var(--background-color);
   border-radius: 20px;
+  padding: var(--spacing-base);
+}
+.hebergements__title {
+  font-weight: bold;
+}
+.hebergements__cards {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr);
   grid-gap: 2rem;
-  padding-left: var(--spacing-base);
-  padding-right: var(--spacing-base);
-  padding-bottom: var(--spacing-base);
-  grid-column-gap: var(--spacing-base);
-  grid-row-gap: var(--spacing-base);
-  margin: var(--spacing-base);
-  background-color: green;
 }
-
-.left h2 {
-  grid-column-start: 1;
-  grid-column-end: 4;
-  font-weight: bold;
-  padding-top: var(--spacing-base);
-}
-
-/* Insertion des images et mise en forme*/
-
-.photo__hotel__cannebiere {
-  background-size: cover;
-  border-radius: 20px 20px 0px 0px;
-  background-position: center;
-  width: 100%;
-  height: 110px;
-  object-fit: cover;
-  object-position: center;
-}
-
-.photo__hotel__port {
-  background-size: cover;
-  border-radius: 20px 20px 0px 0px;
-  background-position: center;
-  width: 100%;
-  height: 110px;
-  object-fit: cover;
-  object-position: center;
-}
-
-.photo__hotel__mouettes {
-  background-size: cover;
-  border-radius: 20px 20px 0px 0px;
-  background-position: center;
-  width: 100%;
-  height: 110px;
-  object-fit: cover;
-  object-position: center;
-}
-
-.photo__hotel__mer {
-  background-size: cover;
-  border-radius: 20px 20px 0px 0px;
-  background-position: center;
-  width: 100%;
-  height: 110px;
-  object-fit: cover;
-  object-position: center;
-}
-
-.photo__hotel__panier {
-  background-size: cover;
-  border-radius: 20px 20px 0px 0px;
-  background-position: center;
-  width: 100%;
-  height: 110px;
-  object-fit: cover;
-  object-position: center;
-}
-
-.photo__hotel__amina {
-  border-radius: 20px 20px 0px 0px;
-  width: 100%;
-  height: 110px;
-  object-fit: cover;
-}
-
-/* Cadre de toutes les images et descriptions */
-
-.hosting__main__card {
+.hebergements__cards__card {
+  text-decoration: none;
+  color: var(--text-color);
   justify-content: space-between;
   border: white solid 5px;
   background-color: white;
   border-radius: 20px;
-  display: grid;
+  margin-top: var(--spacing-base);
+  /*display: grid;
   grid-template-rows: 2fr;
-  box-shadow: 3px 5px 5px #e2e2e2;
+  box-shadow: 3px 5px 5px #e2e2e2;*/
 }
-
-/* Description cliquable et enlèvement du soulignement */
-
-.hosting__main__card a:hover {
-  color: var(--boutonColor);
-  text-decoration: none;
+.hebergements__cards__card__image {
+  height: 115px;
+  width: 100%;
+  border-radius: 20px 20px 0 0;
 }
-
-.hosting__main__card a {
-  color: black;
-  text-decoration: none;
+.hebergements__cards__card__title {
+  font-weight: bold;
 }
-/* Ajustement description sous photo */
-
-.descrip {
-  padding: 5px 0 5px 15px;
+.hebergements__cards__card__info {
 }
-
-/* Ajustement titre des photos*/
-h3 {
-  margin: 0px;
-  font-size: 0.9em;
-}
-
-/* Ajustement ligne tarif nuit*/
-
-h3 + p {
-  font-size: 0.8em;
-  margin: 5px 0 5px 0;
-}
-
-/* Fond bleu des étoiles */
-.blue {
+.hebergements__cards__card__stars {
   color: var(--primary-color);
 }
-
-/* Fond gris des étoiles */
-
-.grey {
-  color: var(--secondary-color);
+.hebergements__cards__card__stars_star--grey {
+  color: var(--background-color);
 }
-
-/* Ajustement des photos*/
-
-/* Mise en place du bouton afficher plus avec effet de survol*/
-
-#viewmore {
-  border: none;
+.hebergements__link {
   font-weight: bold;
-  font-size: 1em;
   text-decoration: none;
-  padding: 20px 0 0 10px;
+  color: var(--text-color);
 }
 
-#viewmore a {
-  text-decoration: none;
-  color: black;
-}
-
-#viewmore :hover {
-  text-decoration: none;
-  color: var(--boutonColor);
-}
-
-/* Fin de la mise en forme de la partie hébergement left*/
-
-/* Mise en forme de la partie hébergement droite*/
-
-/* Mise en place du container droit */
-
-.hosting__popular {
+.popular {
+  grid-area: popular;
   background-color: var(--background-color);
   border-radius: 20px;
-  display: grid;
-  grid-template-rows: 55px 2fr 2fr 2fr;
-  grid-row-gap: 30px;
-  padding-left: 40px;
-  padding-right: 40px;
-  padding-bottom: 30px;
+  padding: var(--spacing-base);
 }
-/* Description cliquable et enlèvement du soulignement */
-
-.hosting__popular a:hover {
-  color: var(--boutonColor);
-  text-decoration: none;
-}
-
-.hosting__popular a {
-  color: black;
-  text-decoration: none;
-}
-
-/* Mise en place du titre et de l'icone*/
-.hosting__popular__title {
+.popular__title {
+  font-weight: bold;
   display: flex;
   justify-content: space-between;
-  font-weight: bold;
-  margin-top: var(--spacing-base);
+  align-items: flex-start;
 }
-.fa-chart-line {
+.popular__title__icon {
+  display: flex;
   justify-content: space-between;
+  align-items: flex-end;
 }
-
-.hosting__popular__title div {
-  font-size: 20px;
-  padding-top: 38px;
-}
-.popular__price p {
-  font-size: 0.8em;
-}
-
-/* Ajustement des photos*/
-
-.hosting__popular__card__text {
-  display: grid;
-  grid-template-columns: 135px 1fr;
-  grid-column-gap: 10px;
-}
-
-/* Insertion des images et mise en forme*/
-
-.photo__hotel__soleil {
-  background-size: cover;
-  border-radius: 20px 0px 0px 20px;
-  background-position: center;
-  height: 135px;
-  width: 35%;
-}
-
-.photo__chambres__hotes {
-  background-size: cover;
-  border-radius: 20px 0px 0px 20px;
-  background-position: center;
-  height: 135px;
-  width: 35%;
-}
-
-.photo__bleu__blanc {
-  background-size: cover;
-  border-radius: 20px 0px 0px 20px;
-  background-position: center;
-  height: 135px;
-  width: 35%;
-}
-
-/* Mise en forme de chaque photo et description*/
-
-.hosting__popular__card {
+.popular__card {
   background-color: #fff;
   border-radius: 20px;
   border: 5px solid white;
   box-shadow: 3px 5px 5px #e2e2e2;
-}
-
-/* Ajustement description*/
-.descripd {
   display: flex;
-  flex-direction: column;
+  margin-top: var(--spacing-base);
+  text-decoration: none;
+}
+.popular__card__image {
+  height: 100px;
+  width: 100px;
+  border-radius: 20px 0 0 20px;
+}
+.popular__card__in__info {
+  text-decoration: none;
+  margin-top: calc(var(--spacing-xs) / 4);
+}
+.popular__card__in__title {
+  color: var(--text-color);
+  font-weight: bold;
+}
+.popular__card__in__text {
+  color: var(--text-color);
+}
+.popular__card__in__stars_star {
+  color: var(--primary-color);
+  padding-top: calc(var(--spacing-xs) * 2);
+}
+.popular__card__in__stars_star--grey {
+  color: var(--background-color);
 }
 
-.popular__price p {
-  font-size: 0.8em;
+.activities {
+  grid-area: activities;
 }
 
-.evaluation {
-  padding-top: 35px;
+.activities__title {
+  font-weight: bold;
+}
+.activities__cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-gap: 2rem;
+}
+.activities__cards :nth-child(1) {
+  grid-column: 1 / 2;
+  grid-row: 1 / 3;
 }
 
-/* Fin de la mise en forme de la partie hébergement droite*/
+.activities__cards :nth-child(2) {
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+}
+
+.activities__cards :nth-child(3) {
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+}
+
+.activities__cards :nth-child(4) {
+  grid-column: 3 / 4;
+  grid-row: 1 / 3;
+}
+
+.activities__cards :nth-child(5) {
+  grid-column: 4 / 5;
+  grid-row: 1 / 2;
+}
+
+.activities__cards :nth-child(6) {
+  grid-column: 4 / 5;
+  grid-row: 2 / 3;
+}
+.activities__cards__card {
+  text-decoration: none;
+  color: var(--text-color);
+}
+.activities__cards__card__image {
+  height: 115px;
+  border-radius: 20px 20px 0 0;
+}
+.activities__cards__card__title {
+  font-weight: bold;
+}
+
+@media screen and (max-width: 525px) {
+  
+  main {
+    margin: 0;
+    display: grid;
+    grid-template-areas:
+      " popular "
+      " hebergements"
+      "activities ";
+    grid-gap: 2rem;
+  }
+  
+  .hebergements__cards{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .activities__cards {
+    display: flex;
+      align-items: center;
+      flex-direction: column;

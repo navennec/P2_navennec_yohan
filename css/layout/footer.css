@@ -28,6 +28,18 @@ footer a {
 .footer-link {
   display: flex;
   flex-direction: column;
-  padding: calc(var(--spacing-base) * 2);
+  padding: calc(var(--spacing-xs) * 3);
   width: calc(100% / 3);
 }
+
+@media screen and (max-width: 525px) {
+ 
+  footer {
+    margin: 0;
+    align-items: flex-start;
+    flex-direction: column;
+    align-items: center;     
+  }
+  .footer-link {
+    padding: calc(var(--spacing-xs) * 1.5);
+  }
