@@ -29,12 +29,16 @@ header {
 }
 
 .header-title {
-  font-size: 1.5rem; /* TODO : use variable */
+  font-size: calc(var(--spacing-xs) * 1.5); /* TODO : use variable */
   font-weight: bold;
-  line-height: 2rem;
+  line-height: var(--spacing-base);
 }
 
 .header-subtitle {
+  /*
+  font-size: var(--spacing-xs);
+  line-height: var(--spacing-base);
+}*/
   font-size: 1.2rem;
   line-height: 1.5rem;
 }
@@ -54,6 +58,7 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
   background-color: var(--background-color);
   padding: 0 var(--spacing-search);
   border-radius: var(--border-radius-search) 0 0 var(--border-radius-search);

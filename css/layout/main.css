@@ -5,6 +5,8 @@ main {
     "hebergements popular"
     "activities activities";
   grid-gap: 2rem;
+  position: relative;
+  z-index: index 2;
 }
 
 .hebergements {
@@ -12,7 +14,7 @@ main {
   background-color: var(--background-color);
   border-radius: 20px;
   padding: var(--spacing-base);
-  width: 34rem;
+  grid-template-columns: calc(100%- (100% / 3));
 }
 .hebergements__title {
   font-weight: bold;
@@ -30,7 +32,9 @@ main {
   border: white solid 5px;
   background-color: white;
   border-radius: 20px;
-  margin-top: var(--spacing-base);
+  margin-top: var(--spacing-xs);
+  margin-bottom: var(--spacing-xs);
+
   box-shadow: 3px 5px 5px #e2e2e2;
   /*display: grid;
   grid-template-rows: 2fr;*/
@@ -62,7 +66,7 @@ main {
   background-color: var(--background-color);
   border-radius: 20px;
   padding: var(--spacing-base);
-  width: 17rem;
+  grid-template-columns: calc(100%- (200% / 3));
 }
 .popular__title {
   font-weight: bold;
@@ -117,18 +121,19 @@ main {
 }
 .activities__title {
   font-weight: bold;
-  padding-bottom: var(--spacing-xs);
+  padding: 60px 0;
+  /*padding-bottom: var(--spacing-xs);*/
 }
 .activities__cards {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(2, 1fr);
   grid-gap: 2rem;
-  height: 37rem;
 }
 .activities__cards :nth-child(1) {
   grid-column: 1 / 2;
   grid-row: 1 / 3;
+  max-height: 100px;
 }
 
 .activities__cards :nth-child(2) {
@@ -162,9 +167,9 @@ main {
   border-radius: 20px;
 }
 .activities__cards__card__image {
+  border-radius: 20px 20px 0 0;
   height: 80%;
   width: 100%;
-  border-radius: 20px 20px 0 0;
 }
 .activities__cards__card__title {
   font-weight: bold;
@@ -182,17 +187,26 @@ main {
       "activities ";
     grid-gap: 2rem;
   }
+  .hebergements {
+    background-color: white;
+  }
 
   .hebergements__cards {
     display: flex;
     align-items: center;
     flex-direction: column;
   }
+  .hebergements__cards__card {
+    width: 100%;
+  }
 
   .activities__cards {
     display: flex;
     align-items: center;
     flex-direction: column;
+  }
+  .hebergements__link {
+    margin-top: 30px;
   }
 }
 

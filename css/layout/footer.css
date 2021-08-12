@@ -1,6 +1,8 @@
 footer {
   display: flex;
   background-color: var(--background-color);
+  position: relative;
+  z-index: 50;
 }
 
 footer h5 {
