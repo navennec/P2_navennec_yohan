@@ -133,7 +133,6 @@ main {
 .activities__cards :nth-child(1) {
   grid-column: 1 / 2;
   grid-row: 1 / 3;
-  max-height: 100px;
 }
 
 .activities__cards :nth-child(2) {
@@ -185,7 +184,8 @@ main {
       " popular "
       " hebergements"
       "activities ";
-    grid-gap: 2rem;
+    grid-gap: var(--spacing-base);
+    padding: var(--spacing-xs);
   }
   .hebergements {
     background-color: white;
@@ -199,14 +199,16 @@ main {
   .hebergements__cards__card {
     width: 100%;
   }
-
+  .hebergements__link {
+    margin-top: 30px;
+  }
   .activities__cards {
     display: flex;
     align-items: center;
     flex-direction: column;
   }
-  .hebergements__link {
-    margin-top: 30px;
+  .activities__cards__card {
+    width: 100%;
   }
 }
 

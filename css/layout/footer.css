@@ -3,6 +3,7 @@ footer {
   background-color: var(--background-color);
   position: relative;
   z-index: 50;
+  padding: var(--spacing-xs);
 }
 
 footer h5 {
@@ -43,5 +44,6 @@ footer a {
     align-items: center;     
   }
   .footer-link {
-    padding: calc(var(--spacing-xs) * 1.5);
+    width: 100%;
+    padding-bottom:calc(var(--spacing-xs) * 1) ;
   }
