@@ -166,7 +166,6 @@ header {
 
 .header-info__text {
   margin: 0 var(--spacing-xs);
-  font-size: var(--background-color); /* grey color */
 }
 
 @media screen and (max-width: 425px) {

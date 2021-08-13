@@ -34,6 +34,7 @@ main {
   border-radius: 20px;
   margin-top: var(--spacing-xs);
   margin-bottom: var(--spacing-xs);
+  overflow: hidden;
 
   box-shadow: 3px 5px 5px #e2e2e2;
   /*display: grid;
@@ -41,8 +42,8 @@ main {
 }
 .hebergements__cards__card__image {
   height: 115px;
-  width: 100%;
-  border-radius: 20px 20px 0 0;
+  width: 100%; /*
+  border-radius: 20px 20px 0 0;*/
 }
 .hebergements__cards__card__title {
   font-weight: bold;
@@ -87,11 +88,12 @@ main {
   display: flex;
   margin-top: var(--spacing-base);
   text-decoration: none;
+  overflow: hidden;
 }
 .popular__card__image {
   height: 100px;
   width: 100px;
-  border-radius: 20px 0 0 20px;
+  /*border-radius: 20px 0 0 20px;*/
 }
 .popular__card__in__info {
   text-decoration: none;
@@ -130,6 +132,12 @@ main {
   grid-template-rows: repeat(2, 1fr);
   grid-gap: 2rem;
 }
+.port {
+  height: 390px;
+}
+.pomergues {
+  height: 190px;
+}
 .activities__cards :nth-child(1) {
   grid-column: 1 / 2;
   grid-row: 1 / 3;
@@ -164,10 +172,10 @@ main {
   color: var(--text-color);
   box-shadow: 3px 5px 5px #e2e2e2;
   border-radius: 20px;
+  max-height: 300px;
+  overflow: hidden;
 }
 .activities__cards__card__image {
-  border-radius: 20px 20px 0 0;
-  height: 80%;
   width: 100%;
 }
 .activities__cards__card__title {
