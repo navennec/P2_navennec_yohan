@@ -131,12 +131,25 @@ main {
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(2, 1fr);
   grid-gap: 2rem;
-}
-.port {
   height: 390px;
 }
-.pomergues {
-  height: 190px;
+.port {
+  height: 350px;
+}
+.pomegues {
+  height: 120px;
+}
+.frioul {
+  height: 120px;
+}
+.calanques {
+  height: 350px;
+}
+.dame {
+  height: 120px;
+}
+.longchamps {
+  height: 120px;
 }
 .activities__cards :nth-child(1) {
   grid-column: 1 / 2;
