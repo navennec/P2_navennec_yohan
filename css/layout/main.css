@@ -131,25 +131,25 @@ main {
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(2, 1fr);
   grid-gap: 2rem;
-  height: 390px;
+  max-height: 400px;
 }
 .port {
-  height: 350px;
+  height: 340px;
 }
 .pomegues {
-  height: 120px;
+  height: 125px;
 }
 .frioul {
-  height: 120px;
+  height: 125px;
 }
 .calanques {
-  height: 350px;
+  height: 340px;
 }
 .dame {
-  height: 120px;
+  height: 125px;
 }
-.longchamps {
-  height: 120px;
+.longchamp {
+  height: 125px;
 }
 .activities__cards :nth-child(1) {
   grid-column: 1 / 2;
@@ -185,7 +185,7 @@ main {
   color: var(--text-color);
   box-shadow: 3px 5px 5px #e2e2e2;
   border-radius: 20px;
-  max-height: 300px;
+  max-height: 400px;
   overflow: hidden;
 }
 .activities__cards__card__image {
