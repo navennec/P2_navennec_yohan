@@ -5,8 +5,8 @@ main {
     "hebergements popular"
     "activities activities";
   grid-gap: 2rem;
+  grid-template-columns: 1fr calc(100% / 3);
   position: relative;
-  z-index: index 2;
 }
 
 .hebergements {
@@ -14,10 +14,12 @@ main {
   background-color: var(--background-color);
   border-radius: 20px;
   padding: var(--spacing-base);
-  grid-template-columns: calc(100%- (100% / 3));
+  grid-template-columns: repeat(3, 1fr);
 }
 .hebergements__title {
   font-weight: bold;
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
 }
 .hebergements__cards {
   display: grid;
@@ -32,26 +34,36 @@ main {
   border: white solid 5px;
   background-color: white;
   border-radius: 20px;
-  margin-top: var(--spacing-xs);
-  margin-bottom: var(--spacing-xs);
+  /*margin-top: calc (var(--spacing-xs) / 2);
+  margin-bottom: var(--spacing-xs);*/
   overflow: hidden;
-
   box-shadow: 3px 5px 5px #e2e2e2;
   /*display: grid;
   grid-template-rows: 2fr;*/
 }
 .hebergements__cards__card__image {
   height: 115px;
-  width: 100%; /*
+  width: 100%;
+  object-fit: cover; /*
   border-radius: 20px 20px 0 0;*/
 }
 .hebergements__cards__card__title {
   font-weight: bold;
+  margin-left: 1rem;
+  margin-top: 0.5rem;
 }
 .hebergements__cards__card__info {
+  font-size: 0.9em;
+  margin-left: 1rem;
+  margin-top: 0.5rem;
 }
+
 .hebergements__cards__card__stars {
   color: var(--primary-color);
+  font-size: 0.8em;
+  margin-left: 1rem;
+  margin-bottom: 0.5rem;
+  margin-top: 0.5rem;
 }
 .hebergements__cards__card__stars_star--grey {
   color: var(--background-color);
@@ -60,6 +72,8 @@ main {
   font-weight: bold;
   text-decoration: none;
   color: var(--text-color);
+  font-size: 1rem;
+  margin-top: 2rem;
 }
 
 .popular {
@@ -74,6 +88,7 @@ main {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
+  font-size: 1.3rem;
 }
 .popular__title__icon {
   display: flex;
@@ -91,28 +106,32 @@ main {
   overflow: hidden;
 }
 .popular__card__image {
-  height: 100px;
-  width: 100px;
+  height: 120px;
+  width: 120px;
+  object-fit: cover;
   /*border-radius: 20px 0 0 20px;*/
 }
 .popular__card__in__info {
   text-decoration: none;
   margin-top: calc(var(--spacing-xs) / 4);
   margin-left: calc(var(--spacing-xs) / 1);
+  font-size: 0.9em;
+  margin-top: 1rem;
 }
 .popular__card__in__title {
   color: var(--text-color);
   font-weight: bold;
   margin-bottom: calc(var(--spacing-xs) / 2);
+  font-size: 0.9rem;
 }
 .popular__card__in__text {
   color: var(--text-color);
 }
-.popular__card__in__stars {
-}
+
 .popular__card__in__stars_star {
   color: var(--primary-color);
-  padding-top: calc(var(--spacing-xs) * 1);
+  padding-top: calc(var(--spacing-xs) * 1.8);
+  font-size: 0.8em;
 }
 .popular__card__in__stars_star--grey {
   color: var(--background-color);
@@ -123,7 +142,8 @@ main {
 }
 .activities__title {
   font-weight: bold;
-  padding: 60px 0;
+  padding: 40px 0;
+  font-size: 1.3rem;
   /*padding-bottom: var(--spacing-xs);*/
 }
 .activities__cards {
@@ -131,7 +151,6 @@ main {
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(2, 1fr);
   grid-gap: 2rem;
-  max-height: 400px;
 }
 .port {
   height: 340px;
@@ -190,24 +209,14 @@ main {
 }
 .activities__cards__card__image {
   width: 100%;
+  object-fit: cover;
 }
 .activities__cards__card__title {
   font-weight: bold;
-  margin-left: var(--spacing-xs);
-  margin-top: var(--spacing-xs);
+  padding: var(--spacing-xs);
 }
 
-@media screen and (max-width: 525px) {
-  main {
-    margin: 0;
-    display: grid;
-    grid-template-areas:
-      " popular "
-      " hebergements"
-      "activities ";
-    grid-gap: var(--spacing-base);
-    padding: var(--spacing-xs);
-  }
+@media screen and (max-width: 425px) {
   .hebergements {
     background-color: white;
   }
@@ -233,14 +242,33 @@ main {
   }
 }
 
-@media screen and (max-width: 1024px) (min-width: 800px) {
+@media screen and (max-width: 778px) and (min-width: 425px) {
   main {
     margin: 0;
-    display: grid;
-    grid-template-areas:
-      " popular "
-      " hebergements"
-      "activities ";
-    grid-gap: 2rem;
+    display: flex;
+    flex-direction: column;
+  }
+  .hebergements {
+    background-color: white;
+  }
+
+  .hebergements__cards {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .hebergements__cards__card {
+    width: 100%;
+  }
+  .hebergements__link {
+    margin-top: 30px;
+  }
+  .activities__cards {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .activities__cards__card {
+    width: 100%;
   }
 }

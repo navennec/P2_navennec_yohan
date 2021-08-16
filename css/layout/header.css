@@ -204,8 +204,6 @@ header {
     padding: 0;
   }
 
-  .header-title {
-  }
   .header-filter__filters__filter {
     display: inline-block;
   }
@@ -223,7 +221,7 @@ header {
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 738px) {
   .header-filter__filters {
     flex-direction: column;
   }
@@ -242,6 +240,5 @@ header {
     display: inherit;
   }
 }
-.header-topnav__nav {
-  display: ;
+@media screen and (max-width: 738px) and (min-width: 425px) {
 }
