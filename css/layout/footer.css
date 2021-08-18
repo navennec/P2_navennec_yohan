@@ -43,8 +43,10 @@ footer a {
     align-items: center;
   }
   .footer-link {
+    margin-left: var(--spacing-base);
     width: 100%;
     padding-bottom: var(--spacing-xs);
+    padding-top: var(--spacing-xs);
   }
 }
 @media screen and (max-width: 738px) and (min-width: 425px) {
