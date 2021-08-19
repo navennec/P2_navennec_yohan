@@ -217,9 +217,19 @@ main {
 }
 
 @media screen and (max-width: 425px) {
-  .hebergements {
-    background-color: white;
+  main {
+    margin: var(--spacing-base);
+    display: grid;
+    grid-template-areas:
+      "popular "
+      "hebergements "
+      "activities  ";
+    grid-gap: 2rem;
+    position: relative;
   }
+}
+.hebergements {
+  background-color: white;
 
   .hebergements__cards {
     display: flex;
