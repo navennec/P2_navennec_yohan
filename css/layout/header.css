@@ -122,6 +122,12 @@ header {
   display: flex;
   align-items: baseline;
   margin: 0 var(--spacing-xs);
+  transform: scale(1);
+  transition: transform 250ms;
+}
+.header-filter__filters__filter:hover {
+  transform: scale(1.1);
+  cursor: pointer;
 }
 
 .header-filter__filters__filter__icon {
