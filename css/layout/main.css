@@ -47,6 +47,10 @@ main {
   transform: scale(1.1);
   cursor: pointer;
 }
+.hebergements__cards__card:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
 
 .hebergements__cards__card__image {
   height: 115px;
@@ -119,6 +123,7 @@ main {
   transform: scale(1.1);
   cursor: pointer;
 }
+
 .popular__card__image {
   height: 120px;
   width: 120px;
@@ -227,6 +232,11 @@ main {
   transform: scale(1.1);
   cursor: pointer;
 }
+.activities__cards__card:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
 .activities__cards__card__image {
   width: 100%;
   object-fit: cover;
@@ -250,6 +260,10 @@ main {
   .popular {
     border-radius: 0;
   }
+  .hebergements {
+    background-color: white;
+  }
+
   .hebergements {
     background-color: white;
   }
