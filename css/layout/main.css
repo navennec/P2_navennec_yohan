@@ -40,7 +40,14 @@ main {
   box-shadow: 3px 5px 5px #e2e2e2;
   /*display: grid;
   grid-template-rows: 2fr;*/
+  transform: scale(1);
+  transition: transform 250ms;
 }
+.hebergements__cards__card:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
 .hebergements__cards__card__image {
   height: 115px;
   width: 100%;
@@ -105,6 +112,12 @@ main {
   margin-top: var(--spacing-base);
   text-decoration: none;
   overflow: hidden;
+  transform: scale(1);
+  transition: transform 250ms;
+}
+.popular__card:hover {
+  transform: scale(1.1);
+  cursor: pointer;
 }
 .popular__card__image {
   height: 120px;
@@ -207,6 +220,12 @@ main {
   border-radius: 20px;
   max-height: 400px;
   overflow: hidden;
+  transform: scale(1);
+  transition: transform 250ms;
+}
+.activities__cards__card:hover {
+  transform: scale(1.1);
+  cursor: pointer;
 }
 .activities__cards__card__image {
   width: 100%;
@@ -266,7 +285,6 @@ main {
 }
 
 @media screen and (max-width: 778px) and (min-width: 425px) {
-
   main {
     grid-template-areas:
       "popular"
@@ -279,15 +297,15 @@ main {
   .popular {
     border-radius: 0;
   }
-  .popular__title{
-    padding: 0 calc( var(--spacing-base)*3);
+  .popular__title {
+    padding: 0 calc(var(--spacing-base) * 3);
   }
-  .popular__card{ 
-    margin: 2em calc( var(--spacing-base)*3)
+  .popular__card {
+    margin: 2em calc(var(--spacing-base) * 3);
   }
   .hebergements {
     background-color: white;
-    padding: 0 calc( var(--spacing-base)*4)
+    padding: 0 calc(var(--spacing-base) * 4);
   }
 
   .hebergements__cards {
@@ -302,7 +320,7 @@ main {
     margin-top: 30px;
   }
   .activities {
-    padding: 0 calc( var(--spacing-base)*4)
+    padding: 0 calc(var(--spacing-base) * 4);
   }
   .activities__cards {
     display: flex;
@@ -318,6 +336,4 @@ main {
   .calanques {
     height: 125px;
   }
-}
-
 }
