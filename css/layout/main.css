@@ -163,7 +163,6 @@ main {
   font-weight: bold;
   padding: 40px 0;
   font-size: 1.3rem;
-  /*padding-bottom: var(--spacing-xs);*/
 }
 .activities__cards {
   display: grid;
