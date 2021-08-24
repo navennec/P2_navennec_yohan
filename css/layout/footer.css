@@ -45,6 +45,7 @@ footer a {
   .footer-link {
     margin-left: var(--spacing-base);
     width: 100%;
+    padding: 0;
     padding-bottom: var(--spacing-xs);
     padding-top: var(--spacing-xs);
   }
@@ -58,6 +59,7 @@ footer a {
   }
   .footer-link {
     width: 100%;
+    padding: 0;
     padding-bottom: var(--spacing-xs);
   }
 }

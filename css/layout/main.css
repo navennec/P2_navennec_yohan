@@ -314,12 +314,9 @@ main {
   .popular__title {
     padding: 0 calc(var(--spacing-base) * 3);
   }
-  .popular__card {
-    margin: 2em calc(var(--spacing-base) * 3);
-  }
   .hebergements {
     background-color: white;
-    padding: 0 calc(var(--spacing-base) * 4);
+    padding: 0 var(--spacing-base);
   }
 
   .hebergements__cards {
@@ -334,7 +331,7 @@ main {
     margin-top: 30px;
   }
   .activities {
-    padding: 0 calc(var(--spacing-base) * 4);
+    padding: 0 var(--spacing-base);
   }
   .activities__cards {
     display: flex;
