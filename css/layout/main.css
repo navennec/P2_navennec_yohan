@@ -34,12 +34,8 @@ main {
   border: white solid 5px;
   background-color: white;
   border-radius: 20px;
-  /*margin-top: calc (var(--spacing-xs) / 2);
-  margin-bottom: var(--spacing-xs);*/
   overflow: hidden;
   box-shadow: 3px 5px 5px #e2e2e2;
-  /*display: grid;
-  grid-template-rows: 2fr;*/
   transform: scale(1);
   transition: transform 250ms;
 }
@@ -55,8 +51,7 @@ main {
 .hebergements__cards__card__image {
   height: 115px;
   width: 100%;
-  object-fit: cover; /*
-  border-radius: 20px 20px 0 0;*/
+  object-fit: cover;
 }
 .hebergements__cards__card__title {
   font-weight: bold;
@@ -128,7 +123,6 @@ main {
   height: 120px;
   width: 120px;
   object-fit: cover;
-  /*border-radius: 20px 0 0 20px;*/
 }
 .popular__card__in__info {
   text-decoration: none;

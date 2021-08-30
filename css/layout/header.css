@@ -35,10 +35,6 @@ header {
 }
 
 .header-subtitle {
-  /*
-  font-size: var(--spacing-xs);
-  line-height: var(--spacing-base);
-}*/
   font-size: 1.2rem;
   line-height: 1.5rem;
 }
